@@ -16,7 +16,6 @@
   "author": "Кляуюзин и партнеры",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-img": "^3.1.0"
+    "@11ty/eleventy": "^2.0.1"
   }
 }

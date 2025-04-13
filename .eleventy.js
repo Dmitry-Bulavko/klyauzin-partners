@@ -1,6 +1,3 @@
-const CleanCSS = require("clean-css");
-const Terser = require("terser");
-
 module.exports = function (eleventyConfig) {
   // Копируем статические файлы
   eleventyConfig.addPassthroughCopy({
