@@ -12,6 +12,11 @@ module.exports = function (eleventyConfig) {
   // Настройки для Nunjucks
   eleventyConfig.setTemplateFormats(["njk", "md", "html"]);
 
+  // Добавляем фильтр для даты
+  eleventyConfig.addFilter("date", function (date, format) {
+    return new Date().getFullYear();
+  });
+
   // Добавляем глобальные данные
   eleventyConfig.addGlobalData("isProd", process.env.GITHUB_ACTIONS === "true");
   eleventyConfig.addGlobalData(
