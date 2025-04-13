@@ -3,48 +3,23 @@ const Terser = require("terser");
 
 module.exports = function (eleventyConfig) {
   // Копируем статические файлы
-  eleventyConfig.addPassthroughCopy("src/styles");
-  eleventyConfig.addPassthroughCopy("src/scripts");
-  eleventyConfig.addPassthroughCopy("src/images");
-  eleventyConfig.addPassthroughCopy("src/fonts");
-  eleventyConfig.addPassthroughCopy("src/favicon.ico");
-  eleventyConfig.addPassthroughCopy("src/robots.txt");
-  eleventyConfig.addPassthroughCopy("src/sitemap.xml");
-
-  // Минификация CSS
-  eleventyConfig.addTemplateFormats("css");
-  eleventyConfig.addExtension("css", {
-    outputFileExtension: "css",
-    compile: async function (inputContent) {
-      return async function () {
-        const minified = new CleanCSS().minify(inputContent);
-        return minified.styles;
-      };
-    },
-  });
-
-  // Минификация JS
-  eleventyConfig.addTemplateFormats("js");
-  eleventyConfig.addExtension("js", {
-    outputFileExtension: "js",
-    compile: async function (inputContent) {
-      return async function () {
-        const minified = await Terser.minify(inputContent);
-        return minified.code;
-      };
-    },
+  eleventyConfig.addPassthroughCopy({
+    "src/images": "images",
+    "src/styles": "styles",
+    "src/scripts": "scripts",
+    "src/favicon.ico": "favicon.ico",
+    "src/robots.txt": "robots.txt",
+    "src/sitemap.xml": "sitemap.xml",
   });
 
   // Настройки для Nunjucks
-  eleventyConfig.setTemplateFormats(["njk", "md", "html", "css", "js"]);
+  eleventyConfig.setTemplateFormats(["njk", "md", "html"]);
 
-  // Добавляем глобальные данные для GitHub Pages
+  // Добавляем глобальные данные
   eleventyConfig.addGlobalData("isProd", process.env.GITHUB_ACTIONS === "true");
   eleventyConfig.addGlobalData(
     "baseUrl",
-    process.env.GITHUB_ACTIONS === "true"
-      ? "/klyauzin-partners" // Замените на имя вашего репозитория
-      : ""
+    process.env.GITHUB_ACTIONS === "true" ? "/klyauzin-partners" : ""
   );
 
   return {
