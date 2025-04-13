@@ -1,0 +1,25 @@
+{
+  "name": "klyauzin-partners",
+  "version": "1.0.0",
+  "description": "Сайт юридической компании Кляуюзин и партнеры",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "dev": "npm run start",
+    "deploy": "npm run build && gh-pages -d dist --message \"Deploy to GitHub Pages\""
+  },
+  "keywords": [
+    "юридическая компания",
+    "юридические услуги",
+    "Кляуюзин и партнеры"
+  ],
+  "author": "Кляуюзин и партнеры",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.0",
+    "clean-css": "^5.3.2",
+    "terser": "^5.24.0",
+    "gh-pages": "^6.1.1"
+  }
+}

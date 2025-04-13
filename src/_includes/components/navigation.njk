@@ -1,0 +1,38 @@
+{% from "components/icon.njk" import icon %}
+
+<nav class="navbar">
+  <div class="container navbar__container">
+    <a href="{{ baseUrl }}/" class="navbar__brand">
+      <img src="{{ baseUrl }}/images/logo.svg" alt="Кляуюзин и партнеры" class="navbar__logo">
+    </a>
+
+    <button class="navbar__toggler" aria-label="Открыть меню">
+      {{ icon('phone', 'icon--medium') }}
+    </button>
+
+    <div class="navbar__collapse">
+      <ul class="navbar__nav">
+        <li class="navbar__item">
+          <a href="{{ baseUrl }}/" class="navbar__link {% if page.url == '/' %}navbar__link--active{% endif %}">
+            {{ icon('phone', 'icon--small') }} Главная
+          </a>
+        </li>
+        <li class="navbar__item">
+          <a href="{{ baseUrl }}/about/" class="navbar__link {% if page.url == '/about/' %}navbar__link--active{% endif %}">
+            {{ icon('phone', 'icon--small') }} О нас
+          </a>
+        </li>
+        <li class="navbar__item">
+          <a href="{{ baseUrl }}/services/" class="navbar__link {% if page.url == '/services/' %}navbar__link--active{% endif %}">
+            {{ icon('phone', 'icon--small') }} Услуги
+          </a>
+        </li>
+        <li class="navbar__item">
+          <a href="{{ baseUrl }}/contacts/" class="navbar__link {% if page.url == '/contacts/' %}navbar__link--active{% endif %}">
+            {{ icon('phone', 'icon--small') }} Контакты
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> 

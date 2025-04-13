@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | Кляуюзин и партнеры</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+  {% include "components/navigation.njk" %}
+  
+  <main class="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; {{ "now" | date: "%Y" }} Кляуюзин и партнеры. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="/scripts/main.js"></script>
+</body>
+</html> 

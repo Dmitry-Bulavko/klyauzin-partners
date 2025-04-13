@@ -1,0 +1,10 @@
+{
+  "current": "default",
+  "profiles": {
+    "default": {
+      "token": "YOUR_OAUTH_TOKEN",
+      "cloud-id": "YOUR_CLOUD_ID",
+      "folder-id": "YOUR_FOLDER_ID"
+    }
+  }
+}
