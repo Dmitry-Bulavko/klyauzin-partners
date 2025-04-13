@@ -6,8 +6,7 @@
     "start": "eleventy --serve",
     "build": "eleventy",
     "dev": "npm run start",
-    "deploy": "git push origin main",
-    "check-build": "node check-build.js"
+    "deploy": "git push origin main"
   },
   "keywords": [
     "юридическая компания",
