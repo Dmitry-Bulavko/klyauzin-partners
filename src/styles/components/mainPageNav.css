@@ -106,6 +106,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
+  max-width: 100%;
 }
 
 @media (width <= 758px) {
