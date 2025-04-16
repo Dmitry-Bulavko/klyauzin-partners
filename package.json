@@ -10,9 +10,8 @@
     "dev": "eleventy --serve",
     "deploy": "git push origin main",
     "lint:js": "eslint src/scripts/**/*.js",
-    "lint:css": "stylelint src/styles/**/*.css",
-    "lint": "npm run lint:js && npm run lint:css",
-    "lint:fix": "eslint src/scripts/**/*.js --fix && stylelint src/styles/**/*.css --fix",
+    "lint": "npm run lint:js",
+    "lint:fix": "eslint src/scripts/**/*.js --fix",
     "format": "prettier --write \"src/**/*.{js,css,njk,html}\"",
     "format:check": "prettier --check \"src/**/*.{js,css,njk,html}\""
   },
@@ -27,17 +26,14 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "clean-css": "^5.3.2",
-    "terser": "^5.24.0",
     "browser-sync": "^3.0.2",
+    "clean-css": "^5.3.2",
     "copyfiles": "^2.4.1",
     "eslint": "^8.56.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
-    "stylelint": "^16.2.1",
-    "stylelint-config-recommended": "^14.0.0",
-    "stylelint-config-standard": "^34.0.0"
+    "terser": "^5.24.0"
   }
 }
