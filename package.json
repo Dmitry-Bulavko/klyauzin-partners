@@ -4,7 +4,7 @@
   "description": "Сайт юридической компании Кляузин и партнеры",
   "scripts": {
     "start": "eleventy --serve",
-    "build:css": "npx cleancss -o dist/styles/main.css src/styles/main.css",
+    "build:css": "cleancss -o dist/styles/main.css src/styles/main.css",
     "build:js": "npx terser src/scripts/main.js -o dist/scripts/main.js",
     "build": "npm run build:css && npm run build:js && eleventy",
     "dev": "eleventy --serve",
@@ -28,6 +28,7 @@
     "@11ty/eleventy": "^2.0.1",
     "browser-sync": "^3.0.2",
     "clean-css": "^5.3.2",
+    "clean-css-cli": "^5.6.3",
     "copyfiles": "^2.4.1",
     "eslint": "^8.56.0",
     "eslint-config-airbnb-base": "^15.0.0",
