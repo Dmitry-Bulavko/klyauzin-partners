@@ -1,0 +1,80 @@
+/* Базовые стили */
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+.page-title {
+  font-family: var(--font-family-oswald);
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: var(--color-gray-200);
+  margin-bottom: 128px;
+}
+
+.bracket-card {
+  position: relative;
+  display: flex;
+}
+
+.bracket-card::before,
+.bracket-card::after {
+  content: "";
+  width: 24px;
+  height: auto;
+  border: 1px solid var(--color-primary);
+}
+
+.bracket-card::before {
+  border-right: none;
+}
+
+.bracket-card::after {
+  border-left: none;
+}

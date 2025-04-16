@@ -1,0 +1,15 @@
+<nav class="main-page-nav">
+  <ul class="main-page-nav__list">
+    {% for item in navigation.navigation %}
+      <li class="main-page-nav__item">
+        <a
+          href="{{ baseUrl }}{{ item.url }}"
+          class="main-page-nav__link{% if page.url == item.url %} main-page-nav__link--active{% endif %}"
+          {% if page.url == item.url %}aria-current="page"{% endif %}
+        >
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav> 

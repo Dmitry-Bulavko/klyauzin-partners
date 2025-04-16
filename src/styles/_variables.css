@@ -6,18 +6,16 @@
   --color-primary: #0b64fe;
   --color-primary-dark: #0954d4;
   --color-primary-light: #3b82fe;
-
   --color-secondary: #2ecc71;
   --color-secondary-dark: #27ae60;
   --color-secondary-light: #58d68d;
-
   --color-accent: #e74c3c;
   --color-accent-dark: #c0392b;
   --color-accent-light: #f1948a;
 
   /* Нейтральные цвета */
-  --color-white: #ffffff;
-  --color-black: #000000;
+  --color-white: #fff;
+  --color-black: #000;
   --color-gray-100: #f8f9fa;
   --color-gray-200: #e9ecef;
   --color-gray-300: #dee2e6;
@@ -57,10 +55,11 @@
   --color-link-visited: var(--color-primary-dark);
 
   /* Типографика */
+  --font-family-oswald: "Oswald", sans-serif;
+  --font-family-ubuntu: "Ubuntu", sans-serif;
   --font-family-base: "Ubuntu", sans-serif;
   --font-family-heading: "Oswald", sans-serif;
   --font-family-monospace: "Courier New", monospace;
-
   --font-size-xs: 0.75rem; /* 12px */
   --font-size-sm: 0.875rem; /* 14px */
   --font-size-base: 1rem; /* 16px */
@@ -70,13 +69,11 @@
   --font-size-3xl: 1.875rem; /* 30px */
   --font-size-4xl: 2.25rem; /* 36px */
   --font-size-5xl: 3rem; /* 48px */
-
   --font-weight-light: 300;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
-
   --line-height-tight: 1.25;
   --line-height-normal: 1.5;
   --line-height-relaxed: 1.75;
@@ -98,19 +95,17 @@
   --border-radius-lg: 0.5rem; /* 8px */
   --border-radius-xl: 1rem; /* 16px */
   --border-radius-full: 9999px;
-
   --border-width-thin: 1px;
   --border-width-normal: 2px;
   --border-width-thick: 4px;
 
   /* Тени */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 5%);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+  --shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+  --shadow-xl:
+    0 20px 25px -5px rgb(0 0 0 / 10%), 0 10px 10px -5px rgb(0 0 0 / 4%);
 
   /* Z-индексы */
   --z-index-dropdown: 1000;

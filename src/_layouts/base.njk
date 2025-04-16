@@ -3,27 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }} | Кляуюзин и партнеры</title>
+  <title>{% if title %}{{ title }} | {% endif %}Кляузин и партнеры</title>
   <meta name="description" content="{{ description }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ baseUrl }}/styles/main.css">
-  <link rel="icon" href="{{ baseUrl }}/favicon.ico">
+  <link rel="icon" href="{{ baseUrl }}/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  {% include "components/navigation.njk" %}
+  <div class="page-wrapper {% if page.url == "/" %} page-wrapper--home {% endif %}">
+    {% if page.url != "/" %}
+      {% include "components/navigation.njk" %}
+    {% endif %}
   
-  <main class="main">
-    {{ content | safe }}
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p class="footer__text">&copy; {{ "now" | date }} Кляуюзин и партнеры. Все права защищены.</p>
-    </div>
-  </footer>
-
+    <main class="main content-grid">
+      {{ content | safe }}
+    </main>
+  </div>
   <script src="{{ baseUrl }}/scripts/main.js"></script>
 </body>
 </html> 

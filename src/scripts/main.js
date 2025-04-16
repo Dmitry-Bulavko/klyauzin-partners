@@ -40,4 +40,28 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // Мобильное меню
+  const navbarToggle = document.querySelector(".navbar__toggle");
+  const navbarMenu = document.querySelector(".navbar__menu");
+
+  if (navbarToggle && navbarMenu) {
+    navbarToggle.addEventListener("click", function () {
+      navbarMenu.classList.toggle("navbar__menu--active");
+      navbarToggle.classList.toggle("navbar__toggle--active");
+    });
+  }
+
+  // Закрытие меню при клике вне его области
+  document.addEventListener("click", function (event) {
+    if (navbarMenu && navbarMenu.classList.contains("navbar__menu--active")) {
+      if (
+        !navbarMenu.contains(event.target) &&
+        !navbarToggle.contains(event.target)
+      ) {
+        navbarMenu.classList.remove("navbar__menu--active");
+        navbarToggle.classList.remove("navbar__toggle--active");
+      }
+    }
+  });
 });

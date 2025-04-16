@@ -1,33 +1,19 @@
 ---
-layout: base
+layout: base.njk
 title: Главная
 description: Кляуюзин и партнеры - юридическая компания
 ---
-
-<section class="hero">
-  <div class="container">
-    <h1 class="hero__title">Кляуюзин и партнеры</h1>
-    <p class="hero__text">Профессиональная юридическая помощь для вашего бизнеса</p>
-    <a href="#contact" class="button button--primary">Связаться с нами</a>
-  </div>
-</section>
-
-<section class="features">
-  <div class="container">
-    <h2 class="features__title">Наши преимущества</h2>
-    <div class="features__grid">
-      <div class="feature-card">
-        <h3 class="feature-card__title">Опыт</h3>
-        <p class="feature-card__text">Более 10 лет успешной работы на рынке</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="feature-card__title">Команда</h3>
-        <p class="feature-card__text">Профессиональные юристы с многолетним стажем</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="feature-card__title">Гарантии</h3>
-        <p class="feature-card__text">Полная конфиденциальность и защита ваших интересов</p>
-      </div>
+<div class="home__container">
+  <section class="home__hero">
+    <div class="home__hero-content">
+      <div class="home__hero-title">Мы знаем, как работает система</div>
+      <div class="home__hero-text">и используем это знание для вашей защиты</div>
     </div>
-  </div>
-</section> 
+    <div class="home__hero-logo">
+      <img src="{{ baseUrl }}/images/logo.svg" alt="Кляузин и партнеры" class="home__hero-logo-icon">
+    </div>
+  </section>
+  <section class="home__nav">
+    {% include "components/mainPageNav.njk" %}
+  </section>
+</div>

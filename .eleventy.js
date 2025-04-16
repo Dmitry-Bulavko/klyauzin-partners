@@ -7,10 +7,11 @@ module.exports = function (eleventyConfig) {
     "src/favicon.ico": "favicon.ico",
     "src/robots.txt": "robots.txt",
     "src/sitemap.xml": "sitemap.xml",
+    "src/_includes/icons": "icons",
   });
 
   // Настройки для Nunjucks
-  eleventyConfig.setTemplateFormats(["njk", "md", "html"]);
+  eleventyConfig.setTemplateFormats(["njk", "md", "html", "svg"]);
 
   // Добавляем фильтр для даты
   eleventyConfig.addFilter("date", function (date, format) {
@@ -30,6 +31,11 @@ module.exports = function (eleventyConfig) {
       output: "dist",
       includes: "_includes",
       layouts: "_layouts",
+      data: "_data",
     },
+    templateFormats: ["md", "njk", "html", "svg"],
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
   };
 };
