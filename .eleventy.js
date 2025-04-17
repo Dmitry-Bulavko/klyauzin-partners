@@ -1,17 +1,20 @@
 module.exports = function (eleventyConfig) {
   // Копируем статические файлы
   eleventyConfig.addPassthroughCopy({
-    "src/images": "images",
-    "src/styles": "styles",
-    "src/scripts": "scripts",
+    "src/_images": "images",
+    "src/_styles": "styles",
+    "src/_scripts": "scripts",
     "src/favicon.ico": "favicon.ico",
     "src/robots.txt": "robots.txt",
     "src/sitemap.xml": "sitemap.xml",
     "src/_includes/icons": "icons",
   });
 
+  // Копируем CSS файлы из компонентов
+  eleventyConfig.addPassthroughCopy("src/**/*.css");
+
   // Настройки для Nunjucks
-  eleventyConfig.setTemplateFormats(["njk", "md", "html", "svg"]);
+  eleventyConfig.setTemplateFormats(["njk", "md", "html", "svg", "css"]);
 
   // Добавляем фильтр для даты
   eleventyConfig.addFilter("date", function (date, format) {
@@ -33,7 +36,7 @@ module.exports = function (eleventyConfig) {
       layouts: "_layouts",
       data: "_data",
     },
-    templateFormats: ["md", "njk", "html", "svg"],
+    templateFormats: ["md", "njk", "html", "svg", "css"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",

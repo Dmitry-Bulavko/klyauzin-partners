@@ -1,0 +1,107 @@
+.bankruptcy {
+  padding-bottom: 40px;
+}
+
+.bankruptcy__content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 112px;
+}
+
+.bankruptcy__description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px;
+}
+
+.bankruptcy__description-text {
+  font-family: var(--font-family-ubuntu);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: var(--color-text-primary);
+}
+
+.bankruptcy__description-text-bracket {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-primary);
+  padding: 24px;
+}
+.bankruptcy__description-text-bracket p.title {
+  font-family: var(--font-family-oswald);
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+.bankruptcy__description-text-bracket p.description {
+  font-family: var(--font-family-ubuntu);
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+.bankruptcy__description-text-bracket ul {
+  margin: 16px;
+  padding: 0;
+  list-style: circle;
+}
+
+.bankruptcy__projects {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.bankruptcy__projects-title {
+  font-family: var(--font-family-oswald);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-variant: small-caps;
+}
+
+.bankruptcy__projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.bankruptcy__projects-item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bankruptcy__projects-item-title {
+  font-family: var(--font-family-ubuntu);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.bankruptcy__projects-item-text {
+  font-family: var(--font-family-ubuntu);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: var(--color-text-primary);
+}
+
+.bankruptcy__projects-list hr {
+  background-color: var(--color-primary);
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  border: none;
+}

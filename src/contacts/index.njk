@@ -1,26 +1,29 @@
 ---
 layout: base
-title: Контакты
+title: Как с нами связаться
 description: Контактная информация компании Кляузин и партнеры
 ---
 
+{% from "components/icon.njk" import icon %}
 <section class="contacts">
-  <h1 class="page-title">Контакты</h1>
-  
+  <h1 class="page-title">{{title}}</h1>
+
   <div class="contacts__content">
-    <div class="contacts__info">
-      <h2>Наш адрес</h2>
-      <p>г. Москва, ул. Примерная, д. 123</p>
-      
-      <h2>Телефон</h2>
-      <p>+7 (999) 123-45-67</p>
-      
-      <h2>Email</h2>
-      <p>info@klyauzin-partners.ru</p>
-    </div>
-    
-    <div class="contacts__map">
-      <!-- Здесь будет карта -->
+    <div class="bracket-card">
+      <div class="contacts__info">
+        <div class="contacts__info-item">
+          {{ icon('map-marker-solid', 'contacts__info-item-icon')}}
+          <p>Санкт-Петербург, ул. Профессора Попова, д. 26 к. 2</p>
+        </div>
+        <div class="contacts__info-item">
+          {{ icon('envelope', 'contacts__info-item-icon')}}
+          <a href="mailto:klauzin@gmail.com">klauzin@gmail.com</a>
+        </div>
+        <div class="contacts__info-item">
+          {{ icon('phone-solid', 'contacts__info-item-icon')}}
+          <a href="tel:+79117777777">+7 (911) 777-77-77</a>
+        </div>
+      </div>
     </div>
   </div>
-</section> 
+</section>

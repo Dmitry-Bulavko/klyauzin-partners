@@ -1,13 +1,105 @@
 ---
 layout: base
-title: Сопутствующие услуги
+title: Услуги для бизнеса
 description: Дополнительные юридические услуги от компании Кляузин и партнеры
 ---
 
+{% from "components/icon.njk" import icon %}
 <section class="related-services">
-  <h1 class="page-title">Сопутствующие услуги</h1>
-  
+  <h1 class="page-title">{{ title }}</h1>
+
   <div class="related-services__content">
-    <p>Мы предлагаем широкий спектр дополнительных юридических услуг.</p>
+    <div class="related-services__card">
+      <div class="related-services__card-content">
+        <div class="related-services__card-title"> Регистрация бизнеса </div>
+        <div class="related-services__card-text-wrapper">
+          <div class="related-services__card-text">
+            Сопровождение создания юридического лица: от выбора
+            организационно-правовой формы до подачи документов в госорганы,
+            а также внесение изменений в ЕГРЮЛ и учредительные документы.
+          </div>
+        </div>
+      </div>
+      <div class="related-services__card-icon-container">
+        {{ icon("briefcase-solid", "related-services__card-icon") }}
+      </div>
+    </div>
+    <div class="related-services__card">
+      <div class="related-services__card-content">
+        <div class="related-services__card-title"> Судебное сопровождение </div>
+        <div class="related-services__card-text-wrapper">
+          <div class="related-services__card-text">
+            Полная защита интересов клиентов в судебных разбирательствах,
+            включая подготовку исков и представительство в суде.
+          </div>
+        </div>
+      </div>
+      <div class="related-services__card-icon-container">
+        {{ icon("balance-scale-solid", "related-services__card-icon") }}
+      </div>
+    </div>
+    <div class="related-services__card">
+      <div class="related-services__card-content">
+        <div class="related-services__card-title">
+          Правовое консультирование
+        </div>
+        <div class="related-services__card-text-wrapper">
+          <div class="related-services__card-text">
+            Экспертные рекомендации по юридическим вопросам, связанным
+            с ведением бизнеса и соблюдением законодательства.
+          </div>
+        </div>
+      </div>
+      <div class="related-services__card-icon-container">
+        {{ icon("certificate-solid", "related-services__card-icon") }}
+      </div>
+    </div>
+    <div class="related-services__card">
+      <div class="related-services__card-content">
+        <div class="related-services__card-title">
+          Досудебное урегулирование споров
+        </div>
+        <div class="related-services__card-text-wrapper">
+          <div class="related-services__card-text">
+            Навык ведения переговоров помогает решить спор без обращения в суд,
+            что позволяет сэкономить время и ресурсы.
+          </div>
+        </div>
+      </div>
+      <div class="related-services__card-icon-container">
+        {{ icon("gavel-solid", "related-services__card-icon") }}
+      </div>
+    </div>
+    <div class="related-services__card">
+      <div class="related-services__card-content">
+        <div class="related-services__card-title">
+          Взыскание задолженности
+        </div>
+        <div class="related-services__card-text-wrapper">
+          <div class="related-services__card-text">
+            Комплекс мероприятий по возврату задолженности включает в себя
+            все этапы судопроизводства, а также исполнительное производство.
+          </div>
+        </div>
+      </div>
+      <div class="related-services__card-icon-container">
+        {{ icon("percentage-solid", "related-services__card-icon") }}
+      </div>
+    </div>
+    <div class="related-services__card">
+      <div class="related-services__card-content">
+        <div class="related-services__card-title">Договорная работа</div>
+        <div class="related-services__card-text-wrapper">
+          <div class="related-services__card-text">
+            Чтобы годами не тратить деньги на суды, позвольте профессионалам
+            разработать для вас договор, условия которого крайне не выгодно
+            нарушать.
+          </div>
+        </div>
+      </div>
+      <div class="related-services__card-icon-container">
+        {{ icon("calendar", "related-services__card-icon") }}
+      </div>
+    </div>
   </div>
-</section> 
+</section>

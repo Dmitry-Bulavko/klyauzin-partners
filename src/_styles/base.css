@@ -47,6 +47,11 @@ a:hover {
   color: var(--color-primary-dark);
 }
 
+.main {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .page-title {
   font-family: var(--font-family-oswald);
   font-weight: 700;

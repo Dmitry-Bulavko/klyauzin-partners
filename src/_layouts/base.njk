@@ -7,8 +7,12 @@
   <meta name="description" content="{{ description }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ baseUrl }}/styles/main.css">
+  {% if page.url != "/" %}
+    <link rel="stylesheet" href="{{ baseUrl }}{{ page.url }}style.css">
+  {% endif %}
   <link rel="icon" href="{{ baseUrl }}/favicon.ico" type="image/x-icon">
 </head>
 <body>

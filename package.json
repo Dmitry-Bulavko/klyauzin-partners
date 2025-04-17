@@ -4,14 +4,14 @@
   "description": "Сайт юридической компании Кляузин и партнеры",
   "scripts": {
     "start": "eleventy --serve",
-    "build:css": "cleancss -o dist/styles/main.css src/styles/main.css",
-    "build:js": "npx terser src/scripts/main.js -o dist/scripts/main.js",
+    "build:css": "cleancss -o dist/styles/main.css src/_styles/main.css",
+    "build:js": "npx terser src/_scripts/main.js -o dist/scripts/main.js",
     "build": "npm run build:css && npm run build:js && eleventy",
     "dev": "eleventy --serve",
     "deploy": "git push origin main",
-    "lint:js": "eslint src/scripts/**/*.js",
+    "lint:js": "eslint src/_scripts/**/*.js",
     "lint": "npm run lint:js",
-    "lint:fix": "eslint src/scripts/**/*.js --fix",
+    "lint:fix": "eslint src/_scripts/**/*.js --fix",
     "format": "prettier --write \"src/**/*.{js,css,njk,html}\"",
     "format:check": "prettier --check \"src/**/*.{js,css,njk,html}\""
   },
