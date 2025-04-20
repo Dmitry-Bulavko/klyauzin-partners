@@ -3,6 +3,7 @@ layout: base.njk
 title: Главная
 description: Кляуюзин и партнеры - юридическая компания
 ---
+{% from "components/icon.njk" import icon %}
 <div class="home__container">
   <section class="home__hero">
     <div class="home__hero-content">
@@ -10,7 +11,7 @@ description: Кляуюзин и партнеры - юридическая ко�
       <div class="home__hero-text">и используем это знание для вашей защиты</div>
     </div>
     <div class="home__hero-logo">
-      <img src="{{ baseUrl }}/images/logo.svg" alt="Кляузин и партнеры" class="home__hero-logo-icon">
+      {{ icon("logo", "home__hero-logo-icon")}}
     </div>
   </section>
   <section class="home__nav">

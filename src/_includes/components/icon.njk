@@ -1,5 +1,9 @@
 {% macro icon(name, className) %}
-<svg class="icon {% if className %}{{ className }}{% endif %}" aria-hidden="true" focusable="false">
+<svg
+  class="icon-component {% if className %}{{ className }}{% endif %}"
+  aria-hidden="true"
+  focusable="false"
+>
   {% include "../icons/" + name + ".svg" %}
 </svg>
-{% endmacro %} 
+{% endmacro %}

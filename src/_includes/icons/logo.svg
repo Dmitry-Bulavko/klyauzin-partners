@@ -1,4 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="currentColor">
-  <path d="M20 10h160v30H20z"/>
-  <text x="100" y="30" font-family="Arial" font-size="16" text-anchor="middle" fill="white">КЛЯУЗИН</text>
-</svg> 
+<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <text
+   x="0"
+   y="24"
+   font-family="serif"
+   font-size="24"
+   fill="currentColor">
+    Кляузин
+  </text>
+  <text
+   x="0"
+   y="36"
+   font-family="serif"
+   font-size="18"
+   fill="currentColor">
+   и партнёры
+  </text>
+</svg>

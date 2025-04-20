@@ -56,3 +56,8 @@
   color: var(--color-primary) !important;
   pointer-events: none;
 }
+
+.navbar__logo {
+  height: 60px;
+  width: auto;
+}

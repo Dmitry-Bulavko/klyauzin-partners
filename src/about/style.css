@@ -45,7 +45,11 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 48px 60px;
 }
-
+@media screen and (width <= 1000px) {
+  .page-title {
+    font-size: 80px;
+  }
+}
 .about__description-item:nth-child(1) {
   grid-area: item1;
 }
