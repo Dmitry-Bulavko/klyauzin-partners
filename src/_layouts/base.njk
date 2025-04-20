@@ -16,11 +16,10 @@
   <link rel="icon" href="{{ baseUrl }}/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <div class="page-wrapper {% if page.url == "/" %} page-wrapper--home {% endif %}">
+  <div class="page-wrapper {% if page.url == '/' %} page-wrapper--home {% endif %}">
     {% if page.url != "/" %}
       {% include "components/navigation.njk" %}
     {% endif %}
-  
     <main class="main content-grid">
       {{ content | safe }}
     </main>

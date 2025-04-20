@@ -1,16 +1,63 @@
 {% from "components/icon.njk" import icon %}
 
 <nav class="navbar">
-    <a class="navbar__logo" href="{{ baseUrl }}/">
-        {{ icon("logo", "navbar__logo-icon") }}
+  <div class="navbar__mobile">
+    <button
+      class="navbar__burger"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+    >
+      {{ icon("burger", "navbar__burger-icon") }}
+    </button>
+    <a
+      class="navbar__logo navbar__logo--mobile"
+      href="{{ baseUrl }}/"
+    >
+      {{ icon("logo", "navbar__logo-icon") }}
+    </a>
+  </div>
+
+  <div class="navbar__desktop">
+    <a
+      class="navbar__logo"
+      href="{{ baseUrl }}/"
+    >
+      {{ icon("logo", "navbar__logo-icon") }}
     </a>
     <ul class="navbar__list">
-        {% for item in navigation.navigation %}
-            <li class="navbar__item">
-                <a href="{{ baseUrl }}{{ item.url }}" class="navbar__link{% if page.url == item.url %} navbar__link--active{% endif %}" {% if page.url == item.url %}aria-current="page"{% endif %}>
-                    {{ item.title }}
-                </a>
-            </li>
-        {% endfor %}
+      {% for item in navigation.navigation %}
+      <li class="navbar__item">
+        <a
+          href="{{ baseUrl }}{{ item.url }}"
+          class="navbar__link {% if page.url == item.url %} navbar__link--active{% endif %}"
+        >
+          {{ item.title }}
+        </a>
+      </li>
+      {% endfor %}
     </ul>
-</nav> 
+  </div>
+
+  <div class="navbar__mobile-menu">
+    <div class="navbar__mobile-menu-header">
+      <button
+        class="navbar__close"
+        aria-label="Закрыть меню"
+      >
+        {{ icon("close", "navbar__close-icon") }}
+      </button>
+    </div>
+    <ul class="navbar__list navbar__list--mobile">
+      {% for item in navigation.navigation %}
+      <li class="navbar__item">
+        <a
+          href="{{ baseUrl }}{{ item.url }}"
+          class="navbar__link{% if page.url == item.url %} navbar__link--active{% endif %}"
+        >
+          {{ item.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

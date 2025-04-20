@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
     "src/robots.txt": "robots.txt",
     "src/sitemap.xml": "sitemap.xml",
     "src/_includes/icons": "icons",
+    "src/_includes/components": "components",
   });
 
   // Копируем CSS файлы из компонентов
