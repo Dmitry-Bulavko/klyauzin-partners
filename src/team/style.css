@@ -67,4 +67,8 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
+  .team__member-item-photo {
+    width: 100%;
+  }
 }
