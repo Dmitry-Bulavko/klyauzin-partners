@@ -88,6 +88,24 @@
   gap: 10px;
 }
 
+@media screen and (width <= 768px) {
+  .corporate-disputes__projects-item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .corporate-disputes__projects-item-right {
+    width: 100% !important;
+  }
+  .corporate-disputes__projects-item-right .bracket-card {
+    width: 100% !important;
+  }
+  .corporate-disputes__projects-item-right .bracket-card .corporate-disputes__projects-item-right-bracket-card {
+    margin: 0 auto;
+  }
+}
+
 .corporate-disputes__projects-item-left {
   display: flex;
   flex-direction: column;
