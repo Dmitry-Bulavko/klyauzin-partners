@@ -92,6 +92,13 @@ a:hover {
   }
 }
 
+@media screen and (width <= 768px) {
+  .page-title {
+    padding-top: 80px;
+    margin-bottom: 40px;
+  }
+}
+
 .bracket-card {
   position: relative;
   display: flex;
