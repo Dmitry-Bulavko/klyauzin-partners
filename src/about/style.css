@@ -51,6 +51,14 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 48px 60px;
 }
+
+@media screen and (width <= 768px) {
+  .about__description-list {
+    grid-template: "item1" "item2" "item3" "item4";
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (width <= 1000px) {
   .page-title {
     font-size: 80px;
