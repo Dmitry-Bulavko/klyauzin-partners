@@ -28,7 +28,13 @@
   line-height: 100%;
   letter-spacing: 0%;
   font-family: var(--font-family-ubuntu);
+  font-weight: 500;
   gap: 4px;
+  margin: 0 auto;
+}
+
+.about__advantages-item b {
+  font-weight: 700;
 }
 
 .about__advantages-item p {
@@ -50,6 +56,13 @@
     font-size: 80px;
   }
 }
+
+@media screen and (width <= 480px) {
+  .about__advantages-item p {
+    text-align: center;
+  }
+  
+}
 .about__description-item:nth-child(1) {
   grid-area: item1;
 }
@@ -68,7 +81,7 @@
 
 .about__description-item {
   font-family: var(--font-family-ubuntu);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 130%;
   letter-spacing: 0%;

@@ -34,9 +34,9 @@
 
 .home__hero-text {
   font-family: var(--font-family-oswald);
-  font-weight: 200;
-  font-size: 48px;
-  line-height: 140%;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 150%;
   letter-spacing: 0%;
   text-transform: uppercase;
   color: var(--color-text-primary);

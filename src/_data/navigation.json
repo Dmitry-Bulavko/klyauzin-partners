@@ -1,33 +1,32 @@
 {
   "navigation": [
     {
-      "title": "О компании",
-      "url": "/about/"
+      "title": "Корпоративные споры",
+      "url": "/corporate-disputes/"
     },
     {
       "title": "Банкротство",
       "url": "/bankruptcy/"
     },
     {
-      "title": "Корпоративные споры",
-      "url": "/corporate-disputes/"
+      "title": "Команда",
+      "url": "/team/"
     },
     {
-      "title": "Юридическое сопровождение",
-      "url": "/legal-support/"
+      "title": "О компании",
+      "url": "/about/"
+    },
+    {
+      "title": "Контакты",
+      "url": "/contacts/"
     },
     {
       "title": "Сопутствующие услуги",
       "url": "/related-services/"
     },
     {
-      "title": "Команда",
-      "url": "/team/"
-    },
-
-    {
-      "title": "Контакты",
-      "url": "/contacts/"
+      "title": "Юридическое сопровождение",
+      "url": "/legal-support/"
     }
   ]
 }
