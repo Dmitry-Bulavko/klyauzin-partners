@@ -25,7 +25,7 @@
       {{ icon("logo", "navbar__logo-icon") }}
     </a>
     <ul class="navbar__list">
-      {% for item in navigation.navigation %}
+      {% for item in navigation.navigation%}
       <li class="navbar__item">
         <a
           href="{{ baseUrl }}{{ item.url }}"
@@ -48,7 +48,7 @@
       </button>
     </div>
     <ul class="navbar__list navbar__list--mobile">
-      {% for item in navigation.navigation %}
+      {% for item in navigation.navigation | sort(attribute='navOrder') %}
       <li class="navbar__item">
         <a
           href="{{ baseUrl }}{{ item.url }}"

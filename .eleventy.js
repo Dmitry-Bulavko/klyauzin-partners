@@ -43,3 +43,11 @@ module.exports = function (eleventyConfig) {
     dataTemplateEngine: "njk",
   };
 };
+
+// module.exports = function (eleventyConfig) {
+//   eleventyConfig.addFilter("sortBy", function (arr, key) {
+//     return arr.slice().sort((a, b) => {
+//       return (a[key] || 0) - (b[key] || 0);
+//     });
+//   });
+// };
