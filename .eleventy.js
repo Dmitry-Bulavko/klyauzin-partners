@@ -22,6 +22,13 @@ module.exports = function (eleventyConfig) {
     return new Date().getFullYear();
   });
 
+  // Добавляем фильтр для сортировки
+  eleventyConfig.addFilter("sortBy", function (arr, key) {
+    return arr.slice().sort((a, b) => {
+      return (a[key] || 0) - (b[key] || 0);
+    });
+  });
+
   // Добавляем глобальные данные
   eleventyConfig.addGlobalData("isProd", process.env.GITHUB_ACTIONS === "true");
   eleventyConfig.addGlobalData(
