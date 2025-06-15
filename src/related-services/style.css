@@ -1,6 +1,7 @@
 .related-services {
   padding-bottom: 40px;
 }
+
 .related-services .page-title {
   margin-bottom: 60px;
 }
@@ -18,9 +19,11 @@
   overflow: hidden;
   position: relative;
 }
+
 .related-services__card:hover .related-services__card-content {
   transform: translateY(0);
 }
+
 .related-services__card-content {
   display: flex;
   flex-direction: column;
@@ -57,4 +60,18 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+@media screen and (width <= 768px) {
+  .related-services__card-content {
+    transform: translateY(0) !important;
+  }
+}
+
+@media screen and (width <= 600px) {
+  .related-services__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+  }
 }
